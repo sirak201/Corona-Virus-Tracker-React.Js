@@ -10,7 +10,6 @@ import {
 
 const getDataAxios = async () => {
   const response = await axios.get("https://covid19.mathdro.id/api");
-  // console.log(response.data);
   return response.data;
 };
 

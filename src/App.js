@@ -2,6 +2,8 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Cases from "./components/cases";
+import Countires from "./components/countries";
+
 import Mapview from "./components/mapview";
 
 import {
@@ -79,6 +81,7 @@ export default function App() {
         </ThemeProvider>
 
         <Cases />
+        <Countires />
       </Grid>
 
       <Grid item xs={8} style={{ minHeight: "100vh" }}>
