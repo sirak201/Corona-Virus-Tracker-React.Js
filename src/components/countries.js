@@ -3,6 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import axios from "axios";
+import Button from "@material-ui/core/Button";
 
 import {
   makeStyles,
@@ -31,12 +32,14 @@ class Countires extends Component {
   render() {
     return (
       <div>
-        <ul>
+        <ul style={{ listStyleType: "none" }}>
           {Object.keys(this.state.counties).map((value, index) => {
             return (
               <li key={index}>
                 <Paper style={{ height: "50px" }}>
-                  <h4>{value}</h4>
+                  <Button fullWidth="true" variant="contained">
+                    {value}
+                  </Button>
                 </Paper>
               </li>
             );

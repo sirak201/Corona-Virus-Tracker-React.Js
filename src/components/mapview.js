@@ -17,7 +17,7 @@ class Mapview extends Component {
   componentDidMount() {
     const map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: "mapbox://styles/mapbox/streets-v11",
+      style: "mapbox://styles/itsirak/ck81zfinq4l2w1iqjk5azl7ct",
       center: [this.state.lng, this.state.lat],
       zoom: this.state.zoom
     });
